@@ -1,0 +1,61 @@
+.container-create-room {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    width: 100%;
+    
+    .input-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      background-color: #dbf1e9;
+
+      .input-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        //margin-top: 30px;
+        //background-color: aliceblue;
+        .input-field {
+          width: 450px;
+          display: flex;
+          align-self: center;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          //background-color: aqua;
+        }
+      }
+
+      .button-field {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        //background-color: rebeccapurple;
+      }
+    }
+
+    .outlet-content {
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      //overflow-y: auto; 
+
+      table {
+        border-collapse: collapse;
+        align-self: center;
+        //background-color: aquamarine;
+
+        td {
+          border: 0px solid #ddd;
+          width: auto;
+          height: 10px;
+        }
+      }
+    }
+}

@@ -1,0 +1,19 @@
+.container-all-event {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  //background-color: aqua;
+
+  .all-event-info {
+    display: flex;
+    //background-color: aqua;
+    padding: 30px;
+  }
+
+  .all-event-table {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    //background-color: antiquewhite;
+  }
+}

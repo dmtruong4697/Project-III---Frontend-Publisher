@@ -1,0 +1,21 @@
+.container-create-event {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+  width: 100%;
+  padding: 10px;
+
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    .input-field {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  }
+}

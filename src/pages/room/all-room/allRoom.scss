@@ -1,0 +1,19 @@
+.container-all-room {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  //background-color: aqua;
+
+  .all-room-info {
+    display: flex;
+    //background-color: aqua;
+    padding: 30px;
+  }
+
+  .all-room-table {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    //background-color: antiquewhite;
+  }
+}

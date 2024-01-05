@@ -1,0 +1,21 @@
+.container-ticket-issuance {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    //background-color: aqua;
+    //justify-content: center;
+    align-items: center;
+
+    table {
+        border-collapse: collapse;
+        align-self: center;
+        //background-color: aquamarine;
+
+        td {
+          border: 0px solid #ddd;
+          width: auto;
+          height: 10px;
+        }
+      }
+
+  }

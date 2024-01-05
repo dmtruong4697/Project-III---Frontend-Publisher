@@ -1,0 +1,18 @@
+.container-check-ticket {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    //background-color: aqua;
+    //justify-content: center;
+    align-items: center;
+
+    .content-table {
+        //flex-direction: row;
+        display: flex;
+    }
+
+    .button-group {
+        //flex-direction: row;
+        display: flex;
+    }
+  }

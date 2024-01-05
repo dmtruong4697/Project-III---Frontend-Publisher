@@ -1,0 +1,32 @@
+.container {
+    margin: 10px;
+    height: fit-content;
+    width: 300px;
+    background-color: aquamarine;
+    flex-direction: column;
+
+    .image-view {
+        height: 150px;
+        width: 100%;
+        background-color: red;
+    }
+    
+    .title {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        background-color: yellow;
+    }
+
+    .date {
+        height: auto;
+        width: 100%;
+        background-color: rgb(0, 255, 153);
+    }
+
+    .tag {
+        height: auto;
+        width: 100%;
+        background-color: rgb(255, 0, 183);
+    }
+}
