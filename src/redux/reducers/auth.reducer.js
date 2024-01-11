@@ -1,6 +1,7 @@
 const initialState = {
   currentUser: null,
   errorMessage: null,
+  signUpMessage: "",
 };
 
 const authReducer = (state = initialState, action) => {
@@ -16,6 +17,11 @@ const authReducer = (state = initialState, action) => {
         ...state,
         currentUser: null,
         errorMessage: action.payload,
+      };
+    case 'SIGNUP_MESSAGE':
+      return {
+        ...state,
+        signUpMessage: action.payload,
       };
     default:
       return state;

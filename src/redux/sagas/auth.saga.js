@@ -1,6 +1,6 @@
 import { takeLatest, call, put } from 'redux-saga/effects';
 import axios from 'axios';
-import { loginFailure, loginSuccess } from '../actions/auth.action';
+import { loginFailure, loginSuccess, signUpMessage } from '../actions/auth.action';
 import { useNavigate } from 'react-router-dom';
 
 const backend = 'http://localhost:3000/api';
@@ -38,8 +38,31 @@ function* login(action) {
   }
 }
 
+const signUp = async (name, number, email, password, description) => {
+  try {
+    const response = await axios.post(backend + "/publisher-signup", 
+    {
+      userName: name,
+      email: email,
+      password: password,
+      phoneNumber: number,
+      avatarImage: "example.com",
+      description: description,
+    },
+    );
+
+    if (response.status === 201) {
+      console.log(response.data.message);
+      return response.data.message;
+    } 
+  } catch (error) {
+    console.error("Error during sign up:", error);
+    return error.response.data.message;
+  }
+};
+
 function* authSaga() {
   yield takeLatest('LOGIN_REQUEST', login);
 }
 
-export default authSaga;
+export {authSaga, signUp};

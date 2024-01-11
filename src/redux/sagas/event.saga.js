@@ -4,9 +4,12 @@ import { useSelector } from 'react-redux';
 
 const backend = 'http://localhost:3000/api';
 
-const getAllEvent = async () => {
+const getAllEvent = async (publisherId) => {
     try {
-      const response = await axios.post(backend + "/all-event", 
+      const response = await axios.post(backend + "/all-event-publisher", 
+      {
+        publisherId: publisherId,
+      },
       {
         headers: {
           Authorization: localStorage.getItem('token'),

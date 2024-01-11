@@ -9,11 +9,17 @@ import CreateRoom from "../pages/room/create-room/CreateRoom";
 import { HomeLayout } from "../layout/homeLayout/HomeLayout.js";
 import TicketIssuance from "../pages/event/ticket-issuance/TicketIssuance.js";
 import CheckTicket from "../pages/event/check-ticket/CheckTicket.js";
+import SignUp from "../pages/auth/sign-up/SignUp.js";
 
 const router = [
       {
         path: "/login",
         page: Login,
+        homeLayout: false,
+      },
+      {
+        path: "/sign-up",
+        page: SignUp,
         homeLayout: false,
       },
       {
